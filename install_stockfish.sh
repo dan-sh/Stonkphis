@@ -18,4 +18,4 @@ rm -rf ${homedir}/__MACOSX
 rm ${homedir}/stockfish_14_linux_x64_bmi2.zip
 
 ## Change the path in configs
-sed -i "2s|engine1path,.*|engine1path,${homedir}/stockfish_14_linux_x64_bmi2|" ${homedir}/config/settings.csv
+sed -i "2s|path,.*|path,${homedir}/stockfish_14_linux_x64_bmi2|" ${homedir}/config/StockFishConfig.csv
