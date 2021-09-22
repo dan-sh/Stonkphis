@@ -16,3 +16,6 @@ make build ARCH=x86-64-modern
 ## Clean Up .zip files etc
 rm -rf ${homedir}/__MACOSX
 rm ${homedir}/stockfish_14_linux_x64_bmi2.zip
+
+## Change the path in configs
+sed -i "2s|engine1path,.*|engine1path,${homedir}/stockfish_14_linux_x64_bmi2|" ${homedir}/config/settings.csv
